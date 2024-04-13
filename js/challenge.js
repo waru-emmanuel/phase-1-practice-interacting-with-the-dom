@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const commentForm = document.getElementById("comment-form");
     const commentInput = document.getElementById("comment-input");
     const submitButton = document.getElementById("submit");
-    
+
     let count = 0;
     let timer = setInterval(incrementCounter, 1000);
   
@@ -71,5 +71,11 @@ document.addEventListener("DOMContentLoaded", () => {
       count++;
       updateCounter();
     }
+
+    function disableButtons(disable) {
+        minusBtn.disabled = disable;
+        plusBtn.disabled = disable;
+        heartBtn.disabled = disable;
+      }
   });
   
